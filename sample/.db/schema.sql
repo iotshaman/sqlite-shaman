@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS user (
+  userId INT NOT NULL PRIMARY KEY,
+  firstName VARCHAR(64) NOT NULL,
+  lastName VARCHAR(64) NOT NULL,
+  emailAddress VARCHAR(128) NOT NULL
+);

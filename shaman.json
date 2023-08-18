@@ -1,0 +1,20 @@
+{
+  "name": "sqlite-shaman-solution",
+  "projects": [
+    {
+      "name": "sqlite-shaman",
+      "environment": "node",
+      "type": "library",
+      "path": "library"
+    },
+    {
+      "name": "sqlite-shaman-sample",
+      "environment": "node",
+      "type": "library",
+      "path": "sample",
+      "include": [
+        "sqlite-shaman"
+      ]
+    }
+  ]
+}

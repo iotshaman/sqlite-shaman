@@ -1,0 +1,46 @@
+{
+	"name": "sqlite-shaman",
+	"version": "1.0.0",
+	"description": "Scaffolded using shaman-cli.",
+	"main": "dist/index.js",
+	"typings": "public_api.d.ts",
+	"private": true,
+	"scripts": {
+		"test": "nyc mocha",
+		"build": "tsc"
+	},
+	"author": "Shaman CLI",
+	"license": "UNLICENSED",
+	"dependencies": {
+		"sqlite3": "^5.1.6"
+	},
+	"devDependencies": {
+		"@types/chai": "^4.3.0",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "^14.14.2",
+		"@types/sinon": "^10.0.6",
+		"chai": "^4.3.4",
+		"colors": "1.4.0",
+		"mocha": "^9.1.3",
+		"nyc": "^15.1.0",
+		"sinon": "^12.0.1",
+		"ts-auto-mock": "^3.5.0",
+		"ts-node": "^10.4.0",
+		"typescript": "^4.5.4"
+	},
+	"nyc": {
+		"extension": [
+			".ts"
+		],
+		"exclude": [
+			"**/*.d.ts",
+			"**/*.spec.ts",
+			"**/*.js"
+		],
+		"reporter": [
+			"html",
+			"lcov"
+		],
+		"all": true
+	}
+}
