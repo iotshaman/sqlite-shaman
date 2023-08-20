@@ -9,7 +9,7 @@ The purpose of mysql-shaman is to provide a standardized ORM interface on top of
 - Node JS
 
 ## Installation
-To use the mysql-shaman ORM in a Node JS project:
+To use the sqlite-shaman ORM in a Node JS project:
 ```sh
 npm install sqlite-shaman --save
 ```
