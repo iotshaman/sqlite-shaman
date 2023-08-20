@@ -1,44 +1,18 @@
-# Typescript Library
-*This project was scaffolded using Shaman CLI*
+## Sqlite Shaman - by IoT Shaman
 
-This typescript library is intended to store shared code, and could be installed in other projects, or built and published to an npm repository. 
+## Access sqlite databases using a simple, familiar ORM syntax.
+Let's be honest, the official sqlite3 npm package leaves a lot to be desired. While it is a solid library that works as advertised, it requires users to submit queries in string form, sacrificing discoverability for the sake of simplicity. To compensate for this, many different ORM packages have been developed, with the intent to make sqlite database management simpler. Unfortunately, almost all of there ORMS are extremely bulky, and often opinionated, forcing users to decide between writing hard-coded string queries, or using a bulky ORM. 
 
-## Building the Project
+The purpose of mysql-shaman is to provide a standardized ORM interface on top of the core sqlite3 package, without adding any additional bulkiness. Now, insteading of writing hard-coded string queries, you can write your CRUD operations using javascript expressions. This significantly improves the developer experience, allowing users to leverage IDE technology to anaylze their data-access operations.
 
-If you scaffolded this project as part of a ["solution"](https://www.npmjs.com/package/shaman-cli#scaffold-solution-command) then you can use Shaman CLI to build this project. Open a command line interface (CMD, bash, etc.) and navigate to your solution folder (where your shaman.json file is located), and run the following command:
+## Requirements
+- Node JS
 
+## Installation
+To use the mysql-shaman ORM in a Node JS project:
 ```sh
-shaman build node
+npm install sqlite-shaman --save
 ```
 
-If you scaffolded this project [manually](https://www.npmjs.com/package/shaman-cli#scaffold-command) then you can use the npm command to build the project. Open a command line interface (CMD, bash, etc.) and navigate to the library project folder, then run the following command:
-
-```sh
-npm run build
-```
-
-## Installing in Other Projects
-
-To install this library project in another typescript project, first build the project. Once the project has been built, open the package.json file for the other project (the one that will be *dependent* on this library project). Now add a property to the "dependency" property that follows the below pattern (note: you may need to create the "dependency" property, if you don't yet have any dependencies):
-
-```json
-{
-    ...
-    "dependencies": {
-        "sample-library": "file:../library"
-    }
-    ...
-}
-```
-
-The name of the dependency property should reflect the value in the library project's package.json "name" property. The value of the dependency property should be a relative (or absolute) path to the library project's folder.
-
-## Publish to NPM Repository
-
-To publish this library to the NPM repository, first build the project. Once the project has been built, open the project's package.json file and change the "private" property to false (or remove it). You will also want to change the "name" property in your package.json, since this value must be unique accross all npm packages. Finally, open a command line interface (CMD, bash, etc.) and navigate to the library project folder, then run the following command:
-
-```sh
-npm publish
-```
-
-*Note: for the publish command to work, you must have an npm account, and be logged in using the npm CLI.
+## Quick Start
+Coming soon!
